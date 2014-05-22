@@ -243,14 +243,15 @@
 						<input type="hidden" name="name_14" value="权益交叉检验比率">
 					</td>
 					<td colspan="3">
-						<input type="text" name="value_14" onchange="check(this,1,100)" value="4.60" onkeyup="value=value.replace(/[^\d]/g,'')" style="width:60px" readonly/>%
+						<input type="text" name="value_14" onchange="check(this,1,100)" value="5.5" onkeyup="value=value.replace(/[^\d]/g,'')" style="width:60px" readonly/>%
+						<span class="errorInfo" id="xthy">权益交叉检验比率大于5%</span>
 						<br/>&nbsp;<span class="errorInfo">请输入1-100的有效数字</span>
 					</td>
 					
 				</tr>																
 			</table>
 		</div>
-		<input type="submit" value="系统核验" class="btn btn-info"/>
+		<input type="button" value="系统核验" class="btn btn-info" onclick="alert('权益交叉检验比率大于5%');$('#xthy').show()"/>
 		<input type="submit" value="保存" class="btn btn-info"/>
 	</form>
 
