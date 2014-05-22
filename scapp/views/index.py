@@ -185,6 +185,26 @@ def new_lfdj():
 def edit_lfdj():
     return render_template("Information/lfdj/edit_lfdj.html")
 	
+# 客户筛选-搜索
+@app.route('/Information/khsx/khsx_search', methods=['GET'])
+def khsx_search():
+    return render_template("Information/khsx/khsx_search.html")	
+	
+# 客户筛选列表
+@app.route('/Information/khsx/khsx', methods=['GET'])
+def khsx():
+    return render_template("Information/khsx/khsx.html")		
+	
+# 新增自动筛选配置
+@app.route('/Information/khsx/new_zdsxpz', methods=['GET'])
+def new_zdsxpz():
+    return render_template("Information/khsx/new_zdsxpz.html")		
+	
+# 编辑自动筛选配置
+@app.route('/Information/khsx/edit_zdsxpz', methods=['GET'])
+def edit_zdsxpz():
+    return render_template("Information/khsx/edit_zdsxpz.html")	
+	
 # 客户分配-搜索
 @app.route('/Information/khfp/khfp_search', methods=['GET'])
 def khfp_search():
@@ -203,7 +223,7 @@ def khxxgl_search():
 # 客户信息管理
 @app.route('/Information/khxxgl/khxxgl', methods=['GET'])
 def khxxgl():
-    return render_template("Information/khxxgl/khxxgl.html")
+    return render_template("Information/khxxgl/khxxgl.html")	
 	
 # 新增客户信息选择
 @app.route('/Information/khxxgl/new_customer', methods=['GET'])
